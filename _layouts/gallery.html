@@ -1,0 +1,56 @@
+---
+layout: wallpaper
+---
+
+<div class="full-width">
+  
+  {% include header.html %}
+
+  <div class="row show-for-small-only">
+    {% for startImage in page.startImages.mobile %}
+      <div class="columns border-none center-image">
+        <img src="{{ startImage.image }}"/>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="row show-for-medium">
+    {% for startImage in page.startImages.desktop %}
+       <div class="columns border-all-except-top center-image">
+         <img src="{{ startImage.image }}"/>
+       </div>
+    {% endfor %}
+  </div>
+
+  <div class="row center-text">
+    <h1 class="enclosed-title font-probapro-xl font-small color-charcoal">
+      {{ page.title }}
+    </h1>
+  </div>
+  <div class="row center-text">
+    <p class="font-small color-charcoal">
+      {{ page.subtitle }}
+    </p>
+  </div>
+  <div class="row center-text border-left-right">
+    <p class="font-xsmall color-charcoal">
+      {{ page.desc }}
+    </p>
+  </div>
+
+  <div class="row">
+    {% for image in page.images %}
+    <div class="show-for-small-only center-text">
+      <img class="border-bottom-only" src="{{ image.mobile }}"/>
+    </div>
+    <div class="show-for-medium center-text">
+      <img class="border-all-except-top" src="{{ image.desktop }}"/>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="border-top-only center-text">
+    <a href="#" class="scrollToTop"><img src="/imgs/arrow2_up_small.png" style="width:25px;"/></a>
+  </div>
+    
+</div>

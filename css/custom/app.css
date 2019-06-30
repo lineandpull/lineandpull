@@ -1,0 +1,199 @@
+/*
+// ========================================================================
+// whole page defaults
+// ========================================================================
+*/
+
+body {
+  font-family: FuturaPT-Book;
+  color: white;
+  max-width: 100%;
+}
+
+h1 {
+  color: white;
+}
+
+.wallpaper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+/* fit content to full width */
+.full-width {
+  width: 100vw;
+  margin: 0;
+}
+
+/* no margins for any row content */
+.row .row {
+  width: 100vw;
+  margin: 0;
+}
+
+/* footer area defaults */
+.footer-area {
+  height: 50px;
+  line-height: 50px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  color: rgb(26, 26, 26);
+}
+
+.side-nav li a:not(.button) {
+  color: white;
+}
+
+.title-bar {
+  color: rgb(26, 26, 26);
+  background-color: rgb(240, 240, 240);
+}
+
+.top-bar, .top-bar ul {
+  color: rgb(26, 26, 26);
+  background-color: transparent;
+}
+
+.top-bar ul li > a {
+  color: rgb(26, 26, 26);
+}
+
+/*
+// ========================================================================
+// Page specific overrides
+// ========================================================================
+*/
+
+/* home page - invert top bar color */
+#home .title-bar {
+  color: white;
+  background-color: transparent;
+}
+
+#home .top-bar ul li > a {
+  color: white;
+}
+
+/* home page - don't show logo */
+#home .logo {
+    display: none;
+}
+
+/*
+// ========================================================================
+// Specific element styles
+// ========================================================================
+*/
+
+.center-text {
+  width: 100vw;
+  display: table;
+  text-align: center;
+}
+
+.center-image {
+  width: 100vw;
+  text-align: center;
+}
+
+.window-caption {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 150px;
+  line-height: 150px;
+}
+
+.window-caption-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.social-icon {
+  width: 30px !important;
+}
+
+.enclosed-title {
+  margin-top: 15px;
+}
+
+/*
+// ========================================================================
+// Highlight image selection
+// ========================================================================
+*/
+
+.picker-wrap {
+  position: relative;
+}
+
+.picker-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+}
+
+.picker-wrap:hover .picker-caption {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: ease 0.5s; /* Safari */
+  transition: ease 0.5s;
+}
+
+/*
+// ========================================================================
+// Scroll to top button
+// ========================================================================
+*/
+
+.scrollToTop {
+  display: block;
+}
+
+/*
+// ========================================================================
+// media queries to resize fonts, borders etc for small devices
+// ========================================================================
+*/
+
+@media only screen and (min-width: 1200px) {
+  .font-xlarge { font-size: 5.0em; }
+  .font-large { font-size: 3.0em; }
+  .font-medium { font-size: 2.5em; }
+  .font-small { font-size: 1.6em; }
+  .font-xsmall { font-size: 1.5em; }
+  .font-xxsmall { font-size: 1.4em; }
+  .picker-caption { font-size: 1.0em; }
+}
+
+@media only screen and (max-width: 800px) {
+  .font-xlarge { font-size: 4.0em; }
+  .font-large { font-size: 2.5em; }
+  .font-medium { font-size: 1.6em; }
+  .font-small { font-size: 1.3em; }
+  .font-xsmall { font-size: 1.1em; }
+  .font-xxsmall { font-size: 0.9em; }
+  .picker-caption { font-size: 0.7em; }
+}
+
+@media only screen and (max-width: 640px) {
+  .font-xlarge { font-size: 3.5em; }
+  .font-large { font-size: 1.8em; }
+  .font-medium { font-size: 1.4em; }
+  .font-small { font-size: 1.1em; }
+  .font-xsmall { font-size: 1.0em; }
+  .font-xxsmall { font-size: 0.8em; }
+  .picker-caption { font-size: 1.3em; }
+}

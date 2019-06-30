@@ -1,0 +1,29 @@
+---
+layout: wallpaper
+menu_control: Design
+permalink: /design/
+backgroundImage:
+---
+
+<div class="full-width">
+
+  {% include header.html %}
+
+  <div class="row center-text">
+    <h1 class="font-probapro-xl font-medium color-charcoal">PROJECTS</h1>
+  </div>
+
+  <div class="row border-left-only">
+
+    {% for design in site.galleryDesign %}
+    <div class="picker-wrap small-12 medium-4 columns border-bottom-right">
+      <a href="{{ design.permalink }}">
+        <img src="{{ design.pickerImage }}" id="pickerImage"/>
+        <p class="picker-caption color-white on-ochre center-text v-align-middle">{{design.title}}</p>
+      </a>
+    </div>
+    {% endfor %}
+
+  </div>
+
+</div>
