@@ -21,4 +21,4 @@ collections:
     output: true
   galleryDesign:
     output: true
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
