@@ -1,1 +1,0 @@
-{"filter":false,"title":"1. Pull Latest - Stopped","tooltip":"1. Pull Latest - Stopped","undoManager":{"mark":-1,"position":-1,"stack":[]},"output":{"id":"output876380","width":0,"height":0,"scrollTop":-1,"config":{"toolbar":true,"name":"1. Pull Latest","command":"./gitPull.sh","runner":"Shell script"}},"timestamp":1562496876956,"hash":"da39a3ee5e6b4b0d3255bfef95601890afd80709"}
