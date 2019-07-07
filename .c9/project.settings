@@ -24,22 +24,28 @@
         "configs": {
             "@inited": "true",
             "json()": {
-                "0. Bundle update": {
+                "Bundle update": {
                     "command": "bundle update --bundler",
-                    "name": "0. Bundle update",
+                    "name": "Bundle update",
                     "runner": "Shell command",
                     "toolbar": true
                 },
-                "1. Pull Latest": {
+                "Pull Latest": {
                     "command": "./gitPull.sh",
-                    "name": "1. Pull Latest",
+                    "name": "Pull Latest",
                     "runner": "Shell script",
                     "toolbar": true
                 },
-                "2. Push Changes": {
+                "Push Changes": {
                     "command": "./gitPush.sh",
-                    "name": "2. Push Changes",
+                    "name": "Push Changes",
                     "runner": "Shell script",
+                    "toolbar": true
+                },
+                "Test Changes": {
+                    "command": "bundle exec jekyll serve --port 8080",
+                    "name": "Test Changes",
+                    "runner": "Shell command",
                     "toolbar": true
                 }
             }
