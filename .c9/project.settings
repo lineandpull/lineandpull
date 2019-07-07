@@ -24,6 +24,12 @@
         "configs": {
             "@inited": "true",
             "json()": {
+                "0. Bundle update": {
+                    "command": "bundle update --bundler",
+                    "name": "0. Bundle update",
+                    "runner": "Shell command",
+                    "toolbar": true
+                },
                 "1. Pull Latest": {
                     "command": "./gitPull.sh",
                     "name": "1. Pull Latest",
